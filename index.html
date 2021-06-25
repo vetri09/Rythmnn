@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li>logo</li>
+                    <li class="heading">Spotify at Home</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for songs" id="search-input">
+        </div>
+        <div class="divisons">
+            <div class="divisons-box">
+                <div class="divisions-content">
+                    <h2>Top songs of NA</h2>
+                <ul>
+                    <li>1. Arcade</li>
+                    <li>2. Beautiful</li>
+                    <li>3. Rockstar</li>
+                    <li>4. Hold on</li>
+                </ul>
+                </div>
+            </div>
+            <div class="divisons-box">
+               <div class="divisions-content">
+                <h2>New releases this week!</h2>
+                <ul>
+                    <li>1. Levitating</li>
+                    <li>2. Heartbreak Anniversary</li>
+                    <li>3. Malibu nights</li>
+                    <li>4. Someone else</li>
+                </ul>
+               </div>
+            </div>
+        </div>
+        <!-- song bar -->
+        <div class="song-bar">
+            <!-- left side -->
+            <div class="left-side">
+                <div class="left-side-img">
+                    <img src="https://i.pinimg.com/564x/24/3f/75/243f7570c803886ad9fec8724d91973d.jpg" alt="" id="music-player-img">
+                </div>
+                <div class="song-detail">
+                    <p id="song-name">Arcade</p>
+                    <p id="song-artist">Duncan Lawrence</p>
+                </div>
+            </div>
+            <div class="music-player">
+                <div class="circle">
+                    <div class="arrow"></div>
+                </div>
+                <dic class="music-bar"></dic>
+            </div>
+            <div class="volume">
+                <div class="volume-bar">
+                </div>
+            </div>
+            <div id="spotify-player">
+
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
