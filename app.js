@@ -3,8 +3,8 @@ let searchBar = document.getElementById("search-input");
 
 //private methods
 function fetchToken(){
-    const clientId = '1313da49eb5e4a7a9f89e459827954dd';
-    const clientSecret = '5ab6fd8453ab4201827cd364a8ca3cb8';
+    const clientId = '';
+    const clientSecret = '';
      fetch('https://accounts.spotify.com/api/token', {
         method: 'POST',
         headers: {
