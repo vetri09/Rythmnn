@@ -28,7 +28,7 @@ searchBar.addEventListener("keyup", (token)=>{
         scrolldiv();
         fetch(`https://api.spotify.com/v1/search?q=${searchBar.value}&type=track&offset=0&limit=1`, {
             method: 'GET',
-            headers: {'Authorization' : 'Bearer ' + 'BQD5tvaiaOVM2Ph-8v90LzJz1OMtUlbMCVFGjC02Y91kTfOdZ0AX7wZmSX4SGzkg9x24o0UzafExoJL2-Lo'}
+            headers: {'Authorization' : 'Bearer ' + 'BQAqmEfZON6tOTj8IBd3QVWmE6ySuKdOZc8Z-Kt_ep0NJDJkA3OXLSKiA69JbpZLCpPRcjNfzEywBI5iOrQ'}
         })
         .then(result=>result.json())
         .then(data => {
@@ -49,7 +49,7 @@ function newReleases(token) {
             method: 'GET',
             headers: {
                 'Content-Type' : 'application/json',
-                'Authorization' : 'Bearer ' + 'BQD5tvaiaOVM2Ph-8v90LzJz1OMtUlbMCVFGjC02Y91kTfOdZ0AX7wZmSX4SGzkg9x24o0UzafExoJL2-Lo'
+                'Authorization' : 'Bearer ' + 'BQAqmEfZON6tOTj8IBd3QVWmE6ySuKdOZc8Z-Kt_ep0NJDJkA3OXLSKiA69JbpZLCpPRcjNfzEywBI5iOrQ'
             }
         })
         .then(result=>result.json()).then(rs=>rs.albums.items).then(
@@ -71,7 +71,7 @@ function topSongs(token) {
             method: 'GET',
             headers: {
                 'Content-Type' : 'application/json',
-                'Authorization' : 'Bearer ' + 'BQD5tvaiaOVM2Ph-8v90LzJz1OMtUlbMCVFGjC02Y91kTfOdZ0AX7wZmSX4SGzkg9x24o0UzafExoJL2-Lo'
+                'Authorization' : 'Bearer ' + 'BQAqmEfZON6tOTj8IBd3QVWmE6ySuKdOZc8Z-Kt_ep0NJDJkA3OXLSKiA69JbpZLCpPRcjNfzEywBI5iOrQ'
             }
         })
         .then(result=>result.json()).then(rs=>rs.tracks.items)
@@ -101,7 +101,7 @@ function play(songName) {
     console.log(songName)
     fetch(`https://api.spotify.com/v1/search?q=${songName}&type=track&offset=0&limit=1`, {
             method: 'GET',
-            headers: {'Authorization' : 'Bearer ' + 'BQD5tvaiaOVM2Ph-8v90LzJz1OMtUlbMCVFGjC02Y91kTfOdZ0AX7wZmSX4SGzkg9x24o0UzafExoJL2-Lo'}
+            headers: {'Authorization' : 'Bearer ' + 'BQAqmEfZON6tOTj8IBd3QVWmE6ySuKdOZc8Z-Kt_ep0NJDJkA3OXLSKiA69JbpZLCpPRcjNfzEywBI5iOrQ'}
         })
         .then(result=>result.json())
         .then(data => {
